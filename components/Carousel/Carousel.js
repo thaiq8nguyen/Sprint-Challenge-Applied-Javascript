@@ -1,6 +1,7 @@
 class Carousel {
     constructor(element) {
         this.element = element;
+
         this.images = element.querySelectorAll(".images");
 
         this.imagesArray = Array.from(this.images);
@@ -25,7 +26,7 @@ class Carousel {
     }
     left() {
 
-        this.images[this.currentIndex].classList.remove("current");
+        this.images[this.currentIndex].className = "images"
 
         if(this.currentIndex === 0) {
             
@@ -36,19 +37,23 @@ class Carousel {
             
         }
 
-        this.images[this.currentIndex].classList.add("current");
+        this.images[this.currentIndex].classList.add("slide-left");
 
     }
     right() {
-        this.images[this.currentIndex].classList.remove("current");
+        this.images[this.currentIndex].className = "images"
 
         if(this.currentIndex === this.imagesLength - 1 ) {
+
             this.currentIndex = 0;
+
         } else {
+
             this.currentIndex++;
         }
-        this.images[this.currentIndex].classList.add("current");
-        console.log(this.imagesArray.indexOf(this.currentImage))
+
+        this.images[this.currentIndex].classList.add("slide-right");
+        
     }
 }
 

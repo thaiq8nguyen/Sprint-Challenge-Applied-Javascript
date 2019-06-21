@@ -297,7 +297,7 @@ body {
   top: 50%;
   left: 25px;
   transform: translate(0, -50%);
-  
+  color: grey;
 }
 .carousel .right-button {
   top: 50%;
@@ -309,5 +309,45 @@ body {
   display: none;
 }
 .carousel .current {
+  animation-name: fadeIn;
+  animation-duration: 1s;
   display: block;
+}
+.carousel .slide-left {
+  animation-name: slideLeft;
+  animation-duration: 1s;
+  display: block;
+}
+.carousel .slide-right {
+  animation-name: slideRight;
+  animation-duration: 1s;
+  display: block;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideLeft {
+  0% {
+    margin-left: -100%;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0%;
+    opacity: 1;
+  }
+}
+@keyframes slideRight {
+  0% {
+    margin-right: -100%;
+    opacity: 0;
+  }
+  100% {
+    margin-right: 0%;
+    opacity: 1;
+  }
 }
