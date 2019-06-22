@@ -1,0 +1,35 @@
+{
+  "name": "sprint-challenge-applied-javascript",
+  "version": "1.0.0",
+  "description": "applied vanilla js to a school newspaper",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --config webpack.config.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thaiq8nguyen/Sprint-Challenge-Applied-Javascript.git"
+  },
+  "author": "Thai Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thaiq8nguyen/Sprint-Challenge-Applied-Javascript/issues"
+  },
+  "homepage": "https://github.com/thaiq8nguyen/Sprint-Challenge-Applied-Javascript#readme",
+  "devDependencies": {
+    "css-loader": "^3.0.0",
+    "file-loader": "^4.0.0",
+    "html-loader": "^0.5.5",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}

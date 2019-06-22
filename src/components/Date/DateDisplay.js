@@ -1,6 +1,6 @@
 
 
-class DateDisplay {
+export default class DateDisplay {
     constructor(element) {
         this.element = element;
 
@@ -14,4 +14,4 @@ class DateDisplay {
     }
 }
 
-new DateDisplay(document.querySelector(".date"));
+
