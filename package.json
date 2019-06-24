@@ -5,8 +5,12 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js",
-    "watch": "webpack --config webpack.config.js --watch"
+    "production": "cross-env NODE_ENV=production webpack --config webpack.production.js --mode production",
+    "prod": "npm run production",
+    "development": "cross-env NODE_ENV=development webpack --config webpack.development.js --mode development",
+    "watch": "npm run development -- --watch",
+    "dev:debug": "debug --mode development",
+    "start": "webpack-dev-server --config webpack.development.js --open"
   },
   "repository": {
     "type": "git",
@@ -19,15 +23,18 @@
   },
   "homepage": "https://github.com/thaiq8nguyen/Sprint-Challenge-Applied-Javascript#readme",
   "devDependencies": {
+    "cross-env": "^5.2.0",
     "css-loader": "^3.0.0",
     "file-loader": "^4.0.0",
     "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
     "mini-css-extract-plugin": "^0.7.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.35.0",
-    "webpack-cli": "^3.3.4"
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
     "lodash": "^4.17.11"

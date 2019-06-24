@@ -1,4 +1,4 @@
-import  boneImg from "./bones.jpg";
+
 
 export default class Card {
     constructor(element) {

@@ -15,5 +15,5 @@ new Carousel(document.querySelector(".carousel"));
 let tabs = document.querySelectorAll(".tab");
 tabs.forEach(tab => new TabLink(tab));
 
-new Card(document.querySelector("#bones"))
+//new Card(document.querySelector("#bones"))
 
