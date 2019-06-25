@@ -4,12 +4,11 @@
 <head>
   <title>Lambda Times</title>
   <link rel="icon" href="./favicon.ico">
-  <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+  
+  <!-- <script src="./components/Date/DateDisplay.js" async></script>
   <script src="./components/Tabs/Tabs.js" async></script>
-  <!-- <script src="./components/Carousel/Carousel.js" async></script> -->
-</head>
+  <script src="./components/Carousel/Carousel.js" async></script> -->
+<link href="main.css" rel="stylesheet"></head>
 
 <body>
 
@@ -45,19 +44,20 @@
       <div data-tab="node" class="tab">NODE.JS</div>
       <div data-tab="jquery" class="tab">jQUERY</div>
       <div data-tab="bootstrap" class="tab">BOOTSTRAP</div>
+      <div data-tab="vue" class="tab vue-tab">VUEJS</div>
     </div>
   </div>
 
   <!-- STRETCH GOAL: ONLY UNCOMMENT THIS WHEN YOU ARE FINISHED WITH THE MAIN OBJECTIVE -->
   <!-- CAROUSEL COMPONENT -->
-  <!-- <div class="carousel">
+  <div class="carousel">
     <div class="left-button"><</div>
-    <img src="./assets/carousel/mountains.jpeg" />
-    <img src="./assets/carousel/computer.jpeg" />
-    <img src="./assets/carousel/trees.jpeg" />
-    <img src="./assets/carousel/turntable.jpeg" />
+    <img src="./images/a1f2c7f154e9fefb6d25042b2a0c8489.jpeg" class="images current" data-image="1" />
+    <img src="./images/28f3422f3fb314b5e88b462426c654b9.jpeg" class="images" data-image="2"/>
+    <img src="./images/2d22d4b957a7697a7dc3e122b59a51ea.jpeg" class="images" data-image="3"/>
+    <img src="./images/44f744c3a705e2077bdacb19c6fbaac7.jpeg" class="images" data-image="4"/>
     <div class="right-button">></div>
-  </div> -->
+  </div>
 
   <!-- CARDS COMPONENT -->
   <div class="cards-container">
@@ -67,7 +67,7 @@
       <div class="headline">ES8: The Next Step in the Evolution of Javascript and What it Means For Your Projects</div>
       <div class="author">
         <div class="img-container">
-          <img src="./assets/sir.jpg" />
+          <img src="./images/1952bfe3d1856f09a45179f318fe79fc.jpg" />
         </div>
         <span>By SIR RUFF'N'STUFF</span>
       </div>
@@ -77,7 +77,7 @@
       <div class="headline">Type Coercion: Why Does NaN !== NaN? and Other Strange Occurrences</div>
       <div class="author">
         <div class="img-container">
-          <img src="./assets/bones.jpg" />
+          <img id="bones"/>
         </div>
         <span>By BONES R. LIFE</span>
       </div>
@@ -87,7 +87,7 @@
       <div class="headline">Bootstrap 5: Get a Sneak Peak at all the New Features</div>
       <div class="author">
         <div class="img-container">
-          <img src="./assets/fido.jpg" />
+          <img src="./images/97fc93d77209e1e7fd738596bb6d22ea.jpg" />
         </div>
         <span>By FIDO WALKSALOT</span>
       </div>
@@ -97,7 +97,7 @@
       <div class="headline">AI: What Are the Ethical Ramifications of the Future?</div>
       <div class="author">
         <div class="img-container">
-          <img src="./assets/max.jpg" />
+          <img src="./images/fa58ce14aebce26ea59e4bbfa87eaee4.jpg" />
         </div>
         <span>By MAX GOODBOYE</span>
       </div>
@@ -107,7 +107,7 @@
       <div class="headline">History of Javascript Libraries: from jQuery to React</div>
       <div class="author">
         <div class="img-container">
-          <img src="./assets/puppers.jpg" />
+          <img src="./images/f6205dcafbc5df9d5ca7cb1f04df3270.jpg" />
         </div>
         <span>By PUPPER S. DOGGO</span>
       </div>
@@ -117,7 +117,7 @@
       <div class="headline">UI Frameworks: A Comparison, Which Made Our List? (Hint: Bootstrap is on it)</div>
       <div class="author">
         <div class="img-container">
-          <img src="./assets/max.jpg" />
+          <img src="./images/fa58ce14aebce26ea59e4bbfa87eaee4.jpg" />
         </div>
         <span>By MAX GOODBOYE</span>
       </div>
@@ -127,7 +127,7 @@
       <div class="headline">Node.js in 2018: Which Framework? Express, Sails, Hapi?</div>
       <div class="author">
         <div class="img-container">
-          <img src="./assets/sir.jpg" />
+          <img src="./images/1952bfe3d1856f09a45179f318fe79fc.jpg" />
         </div>
         <span>By SIR RUFF'N'STUFF</span>
       </div>
@@ -137,7 +137,7 @@
       <div class="headline">MongoDB: NoSQL vs. SQL, the Debate Continues...</div>
       <div class="author">
         <div class="img-container">
-          <img src="./assets/bones.jpg" />
+          <img src="./images/73f4bc892e8cffa283cb5023cf0bc094.jpg" />
         </div>
         <span>By BONES R. LIFE</span>
       </div>
@@ -147,7 +147,7 @@
       <div class="headline">jQuery Animations: When and Where to Use Them, and Not CSS</div>
       <div class="author">
         <div class="img-container">
-          <img src="./assets/fido.jpg" />
+          <img src="./images/97fc93d77209e1e7fd738596bb6d22ea.jpg" />
         </div>
         <span>By FIDO WALKSALOT</span>
       </div>
@@ -157,7 +157,7 @@
       <div class="headline">AR or VR: How We Will See the World Through a Digital Lense</div>
       <div class="author">
         <div class="img-container">
-          <img src="./assets/max.jpg" />
+          <img src="./images/fa58ce14aebce26ea59e4bbfa87eaee4.jpg" />
         </div>
         <span>By MAX GOODBOYE</span>
       </div>
@@ -167,7 +167,7 @@
       <div class="headline">When to Rest, When to Spread: Why There Are Two Meanings Behind '...'</div>
       <div class="author">
         <div class="img-container">
-          <img src="./assets/puppers.jpg" />
+          <img src="./images/f6205dcafbc5df9d5ca7cb1f04df3270.jpg" />
         </div>
         <span>By PUPPER S. DOGGO</span>
       </div>
@@ -177,7 +177,7 @@
       <div class="headline">Typescript: Ten Things you Should Know Before Building Your Next Angular Application</div>
       <div class="author">
         <div class="img-container">
-          <img src="./assets/sir.jpg" />
+          <img src="./images/1952bfe3d1856f09a45179f318fe79fc.jpg" />
         </div>
         <span>By SIR RUFF'N'STUFF</span>
       </div>
@@ -187,7 +187,7 @@
       <div class="headline">Quantum Computing: Where we Are Now, and Where We Will Be Very Soon</div>
       <div class="author">
         <div class="img-container">
-          <img src="./assets/max.jpg" />
+          <img src="./images/fa58ce14aebce26ea59e4bbfa87eaee4.jpg" />
         </div>
         <span>By MAX GOODBOYE</span>
       </div>
@@ -197,7 +197,7 @@
       <div class="headline">Why I Use jQuery in Every Application I Create and Why You Should Too</div>
       <div class="author">
         <div class="img-container">
-          <img src="./assets/fido.jpg" />
+          <img src="./images/97fc93d77209e1e7fd738596bb6d22ea.jpg" />
         </div>
         <span>By FIDO WALKSALOT</span>
       </div>
@@ -207,13 +207,42 @@
       <div class="headline">The Hottest New Bootstrap 4 Components Every Developer Needs to Know About</div>
       <div class="author">
         <div class="img-container">
-          <img src="./assets/max.jpg" />
+          <img src="./images/fa58ce14aebce26ea59e4bbfa87eaee4.jpg" />
+        </div>
+        <span>By MAX GOODBOYE</span>
+      </div>
+    </div>
+    <div class="card" data-tab="vue">
+      <div class="headline">Reading Image Size and Dimensions using VueJS</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./images/c2a605fbc0e687b2e1b4b90a7c445cdd.png" />
+        </div>
+        <span>By MAX GOODBOYE</span>
+      </div>
+    </div>
+    <div class="card" data-tab="vue">
+      <div class="headline">How to upgrade to VuePress 1.0</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./images/c2a605fbc0e687b2e1b4b90a7c445cdd.png" />
+        </div>
+        <span>By MAX GOODBOYE</span>
+      </div>
+    </div>
+    <div class="card" data-tab="vue">
+      <div class="headline">From JSX to Vue: My Favorite Templating Tips</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./images/c2a605fbc0e687b2e1b4b90a7c445cdd.png" />
         </div>
         <span>By MAX GOODBOYE</span>
       </div>
     </div>
 
   </div>
-</body>
+
+<script type="text/javascript" src="bundle.js"></script></body>
+
 
 </html>
