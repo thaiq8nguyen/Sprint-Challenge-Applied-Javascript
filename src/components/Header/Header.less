@@ -1,13 +1,19 @@
+@import "../../LESS/index.less";
+
 .header {
-  .flex(space-between, center);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: @lambda-times-color-white;
-  .border-bottom-grey();
-  .width-100();
+  border-bottom: 1px solid @lambda-times-color-lightgrey;
+  width: 100%;
   height: 120px;
-  margin-top: 44px;
+  //margin-top: 44px;
+  padding-top: 60px;
   padding-bottom: 15px;
-  @media(min-width: 1280px){
-    width: 1280px;
+
+  @media (min-width: 1440px) {
+    width: 1440px;
   }
   h1 {
     font-size: 60px;
